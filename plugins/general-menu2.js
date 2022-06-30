@@ -7,8 +7,14 @@ conn.sendHydrated(m.chat, '*『 ɪɴᴛʀᴏᴅᴜᴄᴛɪᴏɴ 』*', `ʜᴀɪ,
 [`\nɢᴡᴇʜ ꜱᴀᴍɴɢᴇ ᴅᴇɴɢᴀɴ ᴀɴɪᴍᴇʜ`, 'Bilek']
 ], m, {asLocation: true})
 }
-handler.help = ['menu']
+// handler.help = ['menu']
+// handler.tags = ['general']
+// handler.command = /^(menu)$/i
+
+handler.help = ['z']
 handler.tags = ['general']
-handler.command = /^(menu)$/i
+handler.alias = ['z']
+handler.command = /^(z)$/i
+handler.exp = 3
 
 export default handler
