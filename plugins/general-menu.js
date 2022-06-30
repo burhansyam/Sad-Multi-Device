@@ -123,10 +123,15 @@ ptt: true
     throw e
   }
 }
-handler.help = ['m']
+// handler.help = ['m']
+// handler.tags = ['general']
+// handler.alias = ['m']
+// handler.command = /^(m)$/i
+// handler.exp = 3
+
+handler.help = ['menu']
 handler.tags = ['general']
-handler.alias = ['m']
-handler.command = /^(m)$/i
+handler.command = /^(menu)$/i
 handler.exp = 3
 
 export default handler
