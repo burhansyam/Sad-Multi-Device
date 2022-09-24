@@ -77,14 +77,14 @@ global.loadDatabase = async function loadDatabase() {
 }
 loadDatabase()
 
-global.authFile = `${opts._[0] || 'session'}.data.json`
+global.authFile = `${opts._[0] || 'jancuk'}.json`
 const { state, saveState } = useSingleFileAuthState(global.authFile)
 
 const connectionOptions = {
   printQRInTerminal: true,
   auth: state,
-  logger: pino({ level: 'silent'}),
-  version: [2, 2204, 13]
+//   logger: pino({ level: 'silent'}),
+//   version: [2, 2204, 13]
   // logger: pino({ level: 'trace' })
 }
 
